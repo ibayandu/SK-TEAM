@@ -81,7 +81,7 @@ export const YONETIM = [
   {
     unvan: 'Genel Sekreter',
     isim: 'hakalkan [Kurucu üye]',
-    rumuz: 'sekreter',
+    rumuz: 'hakalkan',
     gorev:
       'Söylenen her şeyi yazar. Söylenmeyen bazı şeyleri de yazdığına dair iddialar soruşturulmaktadır.',
   },
