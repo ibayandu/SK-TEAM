@@ -74,7 +74,7 @@ export const YONETIM = [
   {
     unvan: 'Başkan Yardımcısı',
     isim: 'acan [Kurucu üye]',
-    rumuz: 'baskan',
+    rumuz: 'acan',
     gorev:
       'Başkanın iş yükünü hafifletmek amacıyla yeni iş yükleri oluşturur.',
   },
