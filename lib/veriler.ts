@@ -67,7 +67,7 @@ export const YONETIM = [
   {
     unvan: 'Genel Başkan',
     isim: 'ibayandu [Kurucu üye]',
-    rumuz: 'baskan',
+    rumuz: 'ibayandu',
     gorev:
       'Toplantıları açar, kapatır ve çoğunlukla ikisi arasında konuşmaz. Vetosu bir kez kullanılmıştır.',
   },
