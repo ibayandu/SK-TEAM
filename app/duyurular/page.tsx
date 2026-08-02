@@ -8,6 +8,39 @@ export const metadata: Metadata = {
     'SK Team Derneği Yönetim Kurulu kararları, resmî duyuruları ve basın açıklamaları.',
 }
 
+export type Duyuru = {
+  tarih: string;
+  no: string;
+  baslik: string;
+  ozet: string;
+  etiket: string;
+  pdfUrl?: string;
+  pdfMetin?: string; // link üzerinde görünecek yazı
+};
+
+function Ozet({ d }: { d: Duyuru }) {
+  const cls = 'text-sm leading-relaxed text-muted-foreground md:text-base';
+
+  if (!d.pdfUrl || !d.ozet.includes('{link}')) {
+    return <p className={cls}>{d.ozet}</p>;
+  }
+
+  const [once, sonra] = d.ozet.split('{link}');
+
+  return (
+    <p className={cls}>
+      {once}
+      <a href={d.pdfUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-foreground underline underline-offset-4 hover:text-primary" >
+        {d.pdfMetin ?? 'PDF'}
+      </a>
+      {sonra}
+    </p>
+  );
+}
+
 export default function DuyurularPage() {
   return (
     <>
@@ -35,15 +68,11 @@ export default function DuyurularPage() {
               <h2 className="mb-3 text-balance text-xl font-semibold leading-snug md:text-2xl">
                 {d.baslik}
               </h2>
-
-              <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-                {d.ozet}
-              </p>
-
+              <Ozet d={d} />
               <div className="mt-6 border-t border-border pt-4 text-xs text-muted-foreground">
                 Konuya ilişkin gelişmeler yakından takip edilmektedir. ·{' '}
-                <a
-                  href={`mailto:basin@${DERNEK.alanAdi}`}
+
+                <a href={`mailto:basin@${DERNEK.alanAdi}`}
                   className="underline underline-offset-4"
                 >
                   basin@{DERNEK.alanAdi}
@@ -51,14 +80,14 @@ export default function DuyurularPage() {
               </div>
             </li>
           ))}
-        </ol>
+        </ol >
 
         <p className="mt-10 rounded-sm border border-border bg-secondary p-6 text-sm leading-relaxed text-muted-foreground">
           Arşivdeki daha eski duyurular, Arşiv ve Ekran Görüntüsü Müdürlüğü’nün
           tasnif çalışmaları tamamlandığında yayımlanacaktır. Tasnif çalışması
           2026 yılında başlamıştır.
         </p>
-      </section>
+      </section >
     </>
   )
 }

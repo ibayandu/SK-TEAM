@@ -31,7 +31,7 @@ export function SiteHeader() {
             alt="SK Team Derneği amblemi"
             width={1600}
             height={1600}
-            className="h-24 w-24 shrink-0 object-contain"
+            className="h-36 w-36 shrink-0 object-contain"
           />
           <span className="flex flex-col leading-tight">
             <span className="font-serif text-lg font-semibold tracking-tight">

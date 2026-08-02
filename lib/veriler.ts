@@ -68,6 +68,7 @@ export const YONETIM = [
     unvan: 'Genel Başkan',
     isim: 'ibayandu [Kurucu üye]',
     rumuz: 'ibayandu',
+    foto: "https://cdn.intra.42.fr/users/736999ab2a52391b53fe4186b1d160a6/ibayandu.jpg",
     gorev:
       'Toplantıları açar, kapatır ve çoğunlukla ikisi arasında konuşmaz. Vetosu bir kez kullanılmıştır.',
   },
@@ -75,6 +76,7 @@ export const YONETIM = [
     unvan: 'Başkan Yardımcısı',
     isim: 'acan [Kurucu üye]',
     rumuz: 'acan',
+    foto: "https://cdn.intra.42.fr/users/522946962dd78e3d4ff14ef88d01d8d3/acan.jpg",
     gorev:
       'Başkanın iş yükünü hafifletmek amacıyla yeni iş yükleri oluşturur.',
   },
@@ -82,6 +84,7 @@ export const YONETIM = [
     unvan: 'Genel Sekreter',
     isim: 'hakalkan [Kurucu üye]',
     rumuz: 'hakalkan',
+    foto: "https://cdn.intra.42.fr/users/bbf1efd66119d8a8478a601f79ec8f94/hakalkan.jpg",
     gorev:
       'Söylenen her şeyi yazar. Söylenmeyen bazı şeyleri de yazdığına dair iddialar soruşturulmaktadır.',
   },
@@ -89,6 +92,7 @@ export const YONETIM = [
     unvan: 'Sayman',
     isim: 'sesimsek [Kurucu üye]',
     rumuz: 'sesimsek',
+    foto: "https://cdn.intra.42.fr/users/efacff1fb9ef9c1d495e8f2314a58298/sesimsek.jpg",
     gorev:
       'Aidatları toplar, defteri tutar, defteri kaybeder, yeni defter açar. Denetimden her seferinde geçer.',
   },
@@ -96,6 +100,7 @@ export const YONETIM = [
     unvan: 'Disiplin Kurulu Başkanı',
     isim: 'mdivan',
     rumuz: 'mdivan',
+    foto: "https://cdn.intra.42.fr/users/a444e43213033495130b5dd47a307a8d/mdivan.jpg",
     gorev:
       'İhtar, kınama ve tek kişilik sessiz oturma cezalarını uygular. Cezalar tebliğ edilmeden infaz edilir.',
   },
@@ -103,6 +108,7 @@ export const YONETIM = [
     unvan: 'Teknik İşler Koordinatörü',
     isim: 'miskirik',
     rumuz: 'miskirik',
+    foto: "https://cdn.intra.42.fr/users/9ed27a375faa2d36fb7a283cf325e3bc/miskirik.JPG",
     gorev:
       'Alan adını, kurumsal e-postayı ve bu siteyi ayakta tutar. Ayakta tuttuğunu her toplantıda hatırlatır.',
   },
@@ -110,6 +116,7 @@ export const YONETIM = [
     unvan: 'Basın Sorumlusu',
     isim: 'sbayrak',
     rumuz: 'sbayrak',
+    foto: "https://cdn.intra.42.fr/users/529db3271b927515c646de439d82ce00/sbayrak.jpg",
     gorev:
       'Ne habersin ne Türk\'sün seni gören yollara dökülsün.',
   },
@@ -117,6 +124,7 @@ export const YONETIM = [
     unvan: 'Halkla İlişkiler Sorumlusu',
     isim: 'metaskin',
     rumuz: 'metaskin',
+    foto: "https://cdn.intra.42.fr/users/7aebced7c6c1bf709ca6d608d9680755/metaskin.jpg",
     gorev:
       'Derneğin tüm açıklamalarını “konuya ilişkin gelişmeler yakından takip edilmektedir” ile bitirir.',
   },
@@ -124,27 +132,31 @@ export const YONETIM = [
     unvan: 'Onursal Üye',
     isim: 'yzeybek [Kurucu üye]',
     rumuz: 'yzeybek',
+    foto: "https://cdn.intra.42.fr/users/053f9561098b607a00ed10023f0a190d/yzeybek.jpg",
     gorev:
       '',
   },
   {
     unvan: 'Onursal Üye',
     isim: 'fsoymaz [Kurucu üye] [Fosil]',
-    rumuz: 'yzeybek',
+    rumuz: 'fsoymaz',
+    foto: "https://cdn.intra.42.fr/users/39e437770e363e29a014c271e06c5de3/fsoymaz.jpg",
     gorev:
       '',
   },
   {
     unvan: 'Onursal Üye',
     isim: 'musozer [Kurucu üye]',
-    rumuz: 'yzeybek',
+    rumuz: 'musozer',
+    foto: "https://cdn.intra.42.fr/users/cece6cc8b8787042413e7aecb85b9fc2/musozer.jpg",
     gorev:
       '',
   },
   {
     unvan: 'Üye',
     isim: 'esakgul',
-    rumuz: 'yzeybek',
+    rumuz: 'esakgul',
+    foto: "https://cdn.intra.42.fr/users/8f788009838b15a2b85a442d00b2132f/esakgul.jpg",
     gorev:
       '',
   },
@@ -180,6 +192,16 @@ export const DUYURULAR = [
   {
     tarih: '2 Ağustos 2026',
     no: '2026/41',
+    baslik: 'Derneğimizin Kurumsal Kimliği Yayınlandı',
+    ozet:
+      'Derneğimizin logosu, renk paleti, yazı tipleri ve kullanım standartlarını içeren kurumsal kimlik kılavuzumuz hazırlanmıştır. Logomuzun doğru kullanımı, sosyal medya görselleri ve resmi yazışma şablonlarına dair tüm detaylar için {link} göz atabilirsiniz.',
+    etiket: 'Kurumsal',
+    pdfUrl: '/kurumsal-kimlik-kilavuzu.pdf',
+    pdfMetin: 'kurumsal kimlik kılavuzuna',
+  },
+  {
+    tarih: '2 Ağustos 2026',
+    no: '2026/40',
     baslik:
       'Derneğimizin resmî alan adı ve kurumsal elektronik posta altyapısı hizmete alınmıştır',
     ozet:
@@ -188,7 +210,7 @@ export const DUYURULAR = [
   },
   {
     tarih: '29 Temmuz 2026',
-    no: '2026/29',
+    no: '2026/39',
     baslik: 'IMAX görüş ayrılığı hakkında kamuoyu açıklaması',
     ozet:
       'Kampüs içerisinde hakalkan tarafından IMAX’in gereksiz olduğu, halozdem tarafından ise IMAX deneyiminin en az bir kez yaşanması gerektiği yönünde görüşler beyan edilmiştir. Yapılan değerlendirme sonucunda tarafların fikirlerini korumasına, tartışmanın ise süresiz olarak sonuçsuz bırakılmasına karar verilmiştir.',

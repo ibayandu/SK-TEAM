@@ -15,6 +15,14 @@ const DURUM_RENK: Record<string, string> = {
   İzinli: 'bg-muted text-muted-foreground',
 }
 
+export type Yonetici = {
+  unvan: string;
+  isim: string;
+  rumuz: string;
+  gorev: string;
+  foto?: string; // örn: '/gorseller/yonetim/ahmet-yilmaz.jpg'
+};
+
 export default function YonetimPage() {
   return (
     <>
@@ -36,29 +44,41 @@ export default function YonetimPage() {
 
         <div className="grid gap-px bg-border md:grid-cols-2 lg:grid-cols-3">
           {YONETIM.map((y) => (
-            <article key={y.unvan} className="flex flex-col gap-4 bg-background p-6">
-              <div
-                className="flex size-12 items-center justify-center rounded-sm bg-primary font-serif text-lg font-semibold text-primary-foreground"
-                aria-hidden="true"
-              >
-                {y.unvan.charAt(0)}
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="text-base font-semibold leading-snug">{y.unvan}</h3>
-                <p className="text-sm text-muted-foreground">{y.isim}</p>
-                {y.unvan !== 'Onursal Üye' && y.unvan !== 'Üye' && (
-                  <a className="font-mono text-xs text-accent hover:underline" href={`mailto:${y.rumuz}@${DERNEK.alanAdi}`}>
-                    {y.rumuz}@{DERNEK.alanAdi}
-                  </a>
+            <>
+              <article key={y.unvan} className="flex flex-col gap-4 bg-background p-6">
+                {y.foto ? (
+                  <img
+                    src={y.foto}
+                    alt={`${y.isim} — ${y.unvan}`}
+                    loading="lazy"
+                    className="size-20 rounded-xl object-cover"
+                  />
+                ) : (
+                  <div
+                    className="flex size-12 items-center justify-center rounded-sm bg-primary font-serif text-lg font-semibold text-primary-foreground"
+                    aria-hidden="true"
+                  >
+                    {y.unvan.charAt(0)}
+                  </div>
                 )}
-              </div>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                {y.gorev}
-              </p>
-            </article>
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-base font-semibold leading-snug">{y.unvan}</h3>
+                  <p className="text-sm text-muted-foreground">{y.isim}</p>
+                  {y.unvan !== 'Onursal Üye' && y.unvan !== 'Üye' && (
+                    <a
+                      className="font-mono text-xs text-accent hover:underline"
+                      href={`mailto:${y.rumuz}@${DERNEK.alanAdi}`}
+                    >
+                      {y.rumuz}@{DERNEK.alanAdi}
+                    </a>
+                  )}
+                </div>
+                <p className="text-sm leading-relaxed text-muted-foreground">{y.gorev}</p>
+              </article >
+            </>
           ))}
         </div>
-      </section>
+      </section >
 
       <section className="border-t border-border bg-secondary kagit-doku">
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
