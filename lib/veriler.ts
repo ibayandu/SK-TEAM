@@ -14,8 +14,8 @@ export const DERNEK = {
 
 export const ISTATISTIKLER = [
   { deger: '42', etiket: 'Kayıtlı üye', not: 'kampüs adıyla tesadüf değildir' },
-  { deger: '1.337', etiket: 'Onaylı ihbar dosyası', not: 'çoğu birbirimiz hakkında' },
-  { deger: '9', etiket: 'Faal komisyon', not: '2 tanesi sadece isim olarak faal' },
+  { deger: '946', etiket: 'Onaylı ihbar dosyası', not: 'çoğu birbirimiz hakkında' },
+  { deger: '6', etiket: 'Faal komisyon', not: '2 tanesi sadece isim olarak faal' },
   { deger: '0', etiket: 'Kabul edilmiş mazeret', not: 'kuruluşumuzdan bu yana' },
 ]
 
@@ -88,35 +88,35 @@ export const YONETIM = [
   {
     unvan: 'Sayman',
     isim: 'sesimsek [Kurucu üye]',
-    rumuz: 'sayman',
+    rumuz: 'sesimsek',
     gorev:
       'Aidatları toplar, defteri tutar, defteri kaybeder, yeni defter açar. Denetimden her seferinde geçer.',
   },
   {
     unvan: 'Disiplin Kurulu Başkanı',
     isim: 'mdivan',
-    rumuz: 'disiplin',
+    rumuz: 'mdivan',
     gorev:
       'İhtar, kınama ve tek kişilik sessiz oturma cezalarını uygular. Cezalar tebliğ edilmeden infaz edilir.',
   },
   {
     unvan: 'Teknik İşler Koordinatörü',
     isim: 'miskirik',
-    rumuz: 'teknik',
+    rumuz: 'miskirik',
     gorev:
       'Alan adını, kurumsal e-postayı ve bu siteyi ayakta tutar. Ayakta tuttuğunu her toplantıda hatırlatır.',
   },
   {
     unvan: 'Basın Sorumlusu',
     isim: 'sbayrak',
-    rumuz: 'iletisim',
+    rumuz: 'sbayrak',
     gorev:
       'Ne habersin ne Türk\'sün seni gören yollara dökülsün.',
   },
   {
     unvan: 'Halkla İlişkiler Sorumlusu',
     isim: 'metaskin',
-    rumuz: 'iletisim',
+    rumuz: 'metaskin',
     gorev:
       'Derneğin tüm açıklamalarını “konuya ilişkin gelişmeler yakından takip edilmektedir” ile bitirir.',
   },
@@ -178,7 +178,7 @@ export const UYELER = [
 
 export const DUYURULAR = [
   {
-    tarih: '18 Temmuz 2026',
+    tarih: '2 Ağustos 2026',
     no: '2026/41',
     baslik:
       'Derneğimizin resmî alan adı ve kurumsal elektronik posta altyapısı hizmete alınmıştır',
@@ -187,7 +187,7 @@ export const DUYURULAR = [
     etiket: 'Kurumsal',
   },
   {
-    tarih: '29 Ağustos 2026',
+    tarih: '29 Temmuz 2026',
     no: '2026/29',
     baslik: 'IMAX görüş ayrılığı hakkında kamuoyu açıklaması',
     ozet:

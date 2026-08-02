@@ -12,34 +12,41 @@ export const metadata: Metadata = {
 const BIRIMLER = [
   {
     birim: 'Başkanlık',
-    kutu: 'baskan',
+    kutu: 'ibayandu@skteam.network',
     aciklama: 'Genel nitelikli tüm yazışmalar. Cevap süresi belirsizdir.',
   },
   {
     birim: 'Genel Sekreterlik',
-    kutu: 'sekreter',
+    kutu: 'hakalkan@skteam.network',
     aciklama: 'Tutanak talepleri, üyelik kayıt işlemleri ve klasör şikâyetleri.',
   },
   {
     birim: 'Sayman',
-    kutu: 'sayman',
+    kutu: 'sesimsek@skteam.network',
     aciklama: 'Aidat, ortak kasa ve “ben o gün ödemiştim” beyanları.',
   },
   {
     birim: 'Disiplin Kurulu',
-    kutu: 'disiplin',
+    kutu: 'mdivan@skteam.network',
     aciklama: 'İhbar, savunma ve ceza itirazları. İtirazlar arşive alınır.',
   },
   {
-    birim: 'Basın ve Halkla İlişkiler',
-    kutu: 'iletisim',
+    birim: 'Basın',
+    kutu: 'sbayrak@skteam.network',
+    aciklama: 'Röportaj talepleri ve derneğin adının açılımına dair sorular.',
+  },
+  {
+    birim: 'Halkla İlişkiler',
+    kutu: 'metaskin@skteam.network',
     aciklama: 'Röportaj talepleri ve derneğin adının açılımına dair sorular.',
   },
   {
     birim: 'Teknik İşler',
-    kutu: 'teknik',
+    kutu: 'miskirik@skteam.network',
     aciklama: 'Alan adı, kurumsal e-posta ve bu sitedeki aksaklıklar.',
   },
+  {},
+  {},
 ]
 
 export default function IletisimPage() {
@@ -103,10 +110,9 @@ export default function IletisimPage() {
               <li key={b.kutu} className="flex flex-col gap-2 bg-card p-6">
                 <h3 className="text-sm font-semibold">{b.birim}</h3>
                 <a
-                  href={`mailto:${b.kutu}@${DERNEK.alanAdi}`}
-                  className="font-mono text-xs text-accent underline underline-offset-4"
-                >
-                  {b.kutu}@{DERNEK.alanAdi}
+                  href={`mailto:${b.kutu}`}
+                  className="font-mono text-xs text-accent underline underline-offset-4">
+                  {b.kutu}
                 </a>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   {b.aciklama}

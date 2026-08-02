@@ -16,7 +16,7 @@ export function SiteHeader() {
       <div className="bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-1 px-4 py-1.5 text-[11px] tracking-wide">
           <p className="uppercase">
-            Resmî Kurumsal Portal · Sicil No {DERNEK.sicil}
+            Parodi Kurumsal Portal · Sicil No {DERNEK.sicil}
           </p>
           <p className="text-primary-foreground/70">
             Son güncelleme: 18.07.2026 · Tüm hakları saklıdır (sözlü olarak)
@@ -38,7 +38,7 @@ export function SiteHeader() {
               {DERNEK.tamAd}
             </span>
             <span className="text-[11px] tracking-[0.18em] text-muted-foreground">
-              {DERNEK.kisaAd} · {DERNEK.alanAdi}
+              {DERNEK.slogan}
             </span>
           </span>
         </Link>
